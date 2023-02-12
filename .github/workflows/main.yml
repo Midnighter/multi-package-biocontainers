@@ -35,5 +35,7 @@ jobs:
         panel convert src/mulled.py --to pyodide-worker --out pyodide --requirements requirements.txt
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
+      permissions:
+        contents: write
       with:
         folder: pyodide
